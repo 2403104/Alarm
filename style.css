@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 320px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.input-section label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+input {
+  width: 80px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+button {
+  margin: 12px 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#startBtn {
+  background: #4CAF50;
+  color: white;
+}
+
+#stopBtn {
+  background: #f44336;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.timer-section {
+  margin-top: 20px;
+}
+
+#countdown {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+#status {
+  color: #444;
+}
+
+#timeLeft {
+  font-size: 14px;
+  color: #666;
+}

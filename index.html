@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eye Care Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>👀 Eye Care Timer</h1>
+    
+    <div class="input-section">
+      <label>Work Duration (minutes):</label>
+      <input type="number" id="workTime" value="25" min="1">
+
+      <label>Rest Duration (minutes):</label>
+      <input type="number" id="restTime" value="5" min="1">
+      
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+      <button id="stopAlarmBtn" disabled>Stop Alarm</button>
+    </div>
+
+    <div class="timer-section">
+      <h2 id="status">Not started</h2>
+      <div id="countdown">--:--</div>
+      <p id="timeLeft"></p>
+    </div>
+  </div>
+
+    <audio id="alarmSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
